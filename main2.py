@@ -61,6 +61,41 @@ cars = ['Tesla', 'Trabant', 'Audi', 'Bmw', 'Ford', 'Ferrari']
 # for num in num_list:
 #     print(num)
 
-num_list = range(2, 20, 3)
-for num in num_list:
-    print(num)
+# num_list = range(2, 20, 3)
+# for num in num_list:
+#     print(num)
+
+# break/continue
+
+# for num in range(30):
+#     if num == 5:
+#         print('I have reached number 5')
+#         break  # For loopot megtori/kilep
+#         print('After break')
+#     print(num)
+
+# for num in range(30):
+#     if num == 5:
+#         print('I have reached number 5')
+#         continue
+#         print('After continue')
+#     print(num)
+
+
+# While loop
+number = 1
+while number < 10:
+    print('OK')
+    number += 1
+    #number = number + 1
+
+for_while_loop = True
+while for_while_loop:
+    pass
+
+
+
+
+
+
+
