@@ -93,9 +93,13 @@ for_while_loop = True
 while for_while_loop:
     pass
 
+import random
 
-
-
-
-
-
+my_number = random.randint(0, 11)
+user_input = -1
+while my_number != user_input:
+    user_input = int(input("Enter your number:"))
+    if my_number == user_input:
+        print("Yeeees, You won this round!")
+    else:
+        print("Noooo, try again!")
