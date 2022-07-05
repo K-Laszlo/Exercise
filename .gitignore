@@ -5,6 +5,10 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+
+/.vs/python-presentation/FileContentIndex
+*.sqlite
+
 # AWS User-specific
 .idea/**/aws.xml
 
