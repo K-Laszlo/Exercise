@@ -79,15 +79,9 @@ age2 = 14
 #
 # del my_number_list[1]  # index alapjan
 # print(my_number_list)
-# 0         1       2       3           4       5           6       7       8
+
 # car_list = ['tesla', 'tesla', 'tesla', 'tesla', 'tesla', 'audi', 'trabant', 'tesla', 'bmw', 'tesla']
 #
-# """
-# audi tesla, tesla, tesla tesla, tesla, trabant
-# audi tesla tesla tesla, tesla, trabant
-# audi teslam tesla, tesla, trabant
-# """
-
 # counter = 1
 # for car in car_list:
 #     if car == ('tesla' + str(counter)):
@@ -97,6 +91,15 @@ age2 = 14
 #     counter += 1
 #
 # print(car_list)
+
+# my_list = ["apple", "banana", "cherry", "dragonfruit", 'banana', 'banana', 'grape']
+#
+# counter = 0
+# for fruit in my_list:
+#     if fruit == "banana":
+#         my_list.remove("banana")
+#     print(fruit)
+#     counter += 1
 
 
 # no_tesla_list = []
@@ -136,19 +139,74 @@ import math
 # print(math.sqrt(9))  # 3.0   float
 
 
-def hello_world():
-    print('Hello')
+# def hello_world():
+#     print('Hello')
 
 
-hello_world()
+# hello_world()
 
 
-def sum_two_number(number1, number2):
-    my_sum = number1 + number2
-    return my_sum
+# def sum_two_number(number1, number2):
+#     my_sum = number1 + number2
+#     return my_sum
+#
+#
+# result = sum_two_number(1, 5)
+# print(result)
+#
+# print(sum_two_number('ab', 'cd'))
 
 
-result = sum_two_number(1, 5)
-print(result)
+# age = 18
+# if age <= 18:
+#     print('you are young')
+# else:
+#     print('Lucky you are adult')
+#
+# age2 = 20
+# if age2 <= 18:
+#     print('you are young')
+# else:
+#     print('Lucky you are adult')
+#
+def is_adult(your_age):
+    if your_age <= 18:
+        print('you are young')
+    else:
+        print('Lucky you are adult')
 
-print(sum_two_number('ab', 'cd'))
+
+# user_age = int(input('your age?'))
+# is_adult(user_age)
+# is_adult(20)
+# is_adult(21)
+
+
+# def greeting(name, age=0):
+#     my_str = f'Hello {name}, you are {age} years old'
+#     return my_str
+#
+# result = greeting('Krisztina', 18)
+# print(result)
+
+
+# def is_adult2(your_age):
+#     is_adult = False
+#     if your_age > 17:
+#         is_adult = True
+#     print(is_adult)
+#     print(type(is_adult))
+#     return is_adult
+#
+#
+# result = is_adult2(21)
+# print(result)
+
+def check_string(new_word):
+    print(new_word.startswith('a'))
+    char_list = ['a', 'b']
+    return char_list
+
+
+l = check_string('almacica')
+print(l)
