@@ -21,7 +21,7 @@ age2 = 14
 
 # build in functions
 
-word = 'hEllo'
+# word = 'hEllo'
 # print(word.upper())
 # print(word.lower())
 # print(word.capitalize())
@@ -30,52 +30,93 @@ word = 'hEllo'
 # print(word.endswith('o'))
 # print(word.endswith('O'))
 
-my_number_list = [3, 2, 2, 50, -20, -30]
-# a = min(my_number_list)
-# print(a)
+# my_number_list = [3, 2, 2, 50, -20, -30]
+# # a = min(my_number_list)
+# # print(a)
+# #
+# # print(max(my_number_list))
+# #
+# # print(sum(my_number_list))
 #
-# print(max(my_number_list))
+# # my_number_list.sort()
+# # print(my_number_list)
+# #
+# # my_str_list = ['z', 'a', 'b', 'c']
+# # my_str_list.sort()
+# # print(my_str_list)
 #
-# print(sum(my_number_list))
-
-# my_number_list.sort()
+# # my_number_list.reverse()
+# # print(my_number_list)
+# #
+# # my_number_list.append(999)
+# # print(my_number_list)
+# #
+# # my_number_list.insert(0, 999)  # elso parameter az index
+# # print(my_number_list)
+# # list2 = [2345, 23456, 45677]
+# # my_number_list.insert(0, list2)  # elso parameter az index
+# # print(my_number_list)
+#
+# # print(len(my_number_list))
+#
+# # print(my_number_list)
+# # my_number_list.clear()  # Ures listank lesz a clear utan
+# # list2 = [2345, 23456, 45677]
+# # my_number_list.append(list2)  # elso parameter az index
+# # print(my_number_list[0][1])
+# #
+# # print(49 not in my_number_list)
+# # print(50 in my_number_list)
+#
+# my_number_list.remove(2)  # nem index alapjan hanem ertek alapjan torol.
 # print(my_number_list)
 #
-# my_str_list = ['z', 'a', 'b', 'c']
-# my_str_list.sort()
-# print(my_str_list)
-
-# my_number_list.reverse()
+# my_number_list.pop()  # Utolso elemet torli
 # print(my_number_list)
 #
-# my_number_list.append(999)
+# my_number_list.pop(0)  # index alapjan
 # print(my_number_list)
 #
-# my_number_list.insert(0, 999)  # elso parameter az index
+# del my_number_list[1]  # index alapjan
 # print(my_number_list)
-# list2 = [2345, 23456, 45677]
-# my_number_list.insert(0, list2)  # elso parameter az index
-# print(my_number_list)
+# 0         1       2       3           4       5           6       7       8
+car_list = ['tesla', 'tesla', 'tesla', 'tesla', 'tesla', 'audi', 'trabant', 'tesla', 'bmw', 'tesla']
 
-# print(len(my_number_list))
+"""
+audi tesla, tesla, tesla tesla, tesla, trabant
+audi tesla tesla tesla, tesla, trabant
+audi teslam tesla, tesla, trabant
+"""
 
-# print(my_number_list)
-# my_number_list.clear()  # Ures listank lesz a clear utan
-# list2 = [2345, 23456, 45677]
-# my_number_list.append(list2)  # elso parameter az index
-# print(my_number_list[0][1])
+# counter = 1
+# for car in car_list:
+#     if car == ('tesla' + str(counter)):
+#         print(car)
+#         car_list.remove(car)
+#         print(car_list)
+#     counter += 1
 #
-# print(49 not in my_number_list)
-# print(50 in my_number_list)
+# print(car_list)
 
-my_number_list.remove(2)  # nem index alapjan hanem ertek alapjan torol.
-print(my_number_list)
 
-my_number_list.pop()  # Utolso elemet torli
-print(my_number_list)
+# no_tesla_list = []
+# for car in car_list:
+#     if car != 'tesla':
+#         no_tesla_list.append(car)
+#
+# print(no_tesla_list)
 
-my_number_list.pop(0)  # index alapjan
-print(my_number_list)
 
-del my_number_list[1]  # index alapjan
-print(my_number_list)
+for car in car_list[:]:
+    if car == 'tesla':
+        car_list.remove(car)
+
+print(car_list)
+
+car = 'tesla'
+while car in car_list:
+    car_list.remove(car)
+
+print(car_list)
+
+
