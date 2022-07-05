@@ -80,13 +80,13 @@ age2 = 14
 # del my_number_list[1]  # index alapjan
 # print(my_number_list)
 # 0         1       2       3           4       5           6       7       8
-car_list = ['tesla', 'tesla', 'tesla', 'tesla', 'tesla', 'audi', 'trabant', 'tesla', 'bmw', 'tesla']
-
-"""
-audi tesla, tesla, tesla tesla, tesla, trabant
-audi tesla tesla tesla, tesla, trabant
-audi teslam tesla, tesla, trabant
-"""
+# car_list = ['tesla', 'tesla', 'tesla', 'tesla', 'tesla', 'audi', 'trabant', 'tesla', 'bmw', 'tesla']
+#
+# """
+# audi tesla, tesla, tesla tesla, tesla, trabant
+# audi tesla tesla tesla, tesla, trabant
+# audi teslam tesla, tesla, trabant
+# """
 
 # counter = 1
 # for car in car_list:
@@ -107,16 +107,33 @@ audi teslam tesla, tesla, trabant
 # print(no_tesla_list)
 
 
-for car in car_list[:]:
-    if car == 'tesla':
-        car_list.remove(car)
+# for car in car_list[:]:
+#     if car == 'tesla':
+#         car_list.remove(car)
+#
+# print(car_list)
+#
+# car = 'tesla'
+# while car in car_list:
+#     car_list.remove(car)
+#
+# print(car_list)
 
-print(car_list)
+my_number_list2 = [3, 2, 2, 2, 50, -20, -30]
+how_much = my_number_list2.count(2)  # Ertek
+# print(how_much)
 
-car = 'tesla'
-while car in car_list:
-    car_list.remove(car)
+my_string = 'Hello World!'
+check = my_string.find('x')  # -1 ha nincs
+print(check)
+check2 = my_string.find('ll')  # 2. indexet kezdodik a keresett reszlet
+print(check2)
 
-print(car_list)
+import math
+
+print(math.pow(2, 3))  # 2* 2 *2 = 8.0
+print(math.sqrt(9))  # 3.0   float
+
+
 
 
