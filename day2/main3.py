@@ -53,12 +53,29 @@ my_number_list = [3, 2, 2, 50, -20, -30]
 #
 # my_number_list.insert(0, 999)  # elso parameter az index
 # print(my_number_list)
-#
+# list2 = [2345, 23456, 45677]
+# my_number_list.insert(0, list2)  # elso parameter az index
+# print(my_number_list)
+
 # print(len(my_number_list))
 
 # print(my_number_list)
 # my_number_list.clear()  # Ures listank lesz a clear utan
-# print(my_number_list)
+# list2 = [2345, 23456, 45677]
+# my_number_list.append(list2)  # elso parameter az index
+# print(my_number_list[0][1])
+#
+# print(49 not in my_number_list)
+# print(50 in my_number_list)
 
-print(49 not in my_number_list)
-print(50 in my_number_list)
+my_number_list.remove(2)  # nem index alapjan hanem ertek alapjan torol.
+print(my_number_list)
+
+my_number_list.pop()  # Utolso elemet torli
+print(my_number_list)
+
+my_number_list.pop(0)  # index alapjan
+print(my_number_list)
+
+del my_number_list[1]  # index alapjan
+print(my_number_list)
