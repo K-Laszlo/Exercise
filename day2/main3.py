@@ -119,21 +119,36 @@ age2 = 14
 #
 # print(car_list)
 
-my_number_list2 = [3, 2, 2, 2, 50, -20, -30]
-how_much = my_number_list2.count(2)  # Ertek
-# print(how_much)
-
-my_string = 'Hello World!'
-check = my_string.find('x')  # -1 ha nincs
-print(check)
-check2 = my_string.find('ll')  # 2. indexet kezdodik a keresett reszlet
-print(check2)
+# my_number_list2 = [3, 2, 2, 2, 50, -20, -30]
+# how_much = my_number_list2.count(2)  # Ertek
+# # print(how_much)
+#
+# my_string = 'Hello World!'
+# check = my_string.find('x')  # -1 ha nincs
+# print(check)
+# check2 = my_string.find('ll')  # 2. indexet kezdodik a keresett reszlet
+# print(check2)
 
 import math
 
-print(math.pow(2, 3))  # 2* 2 *2 = 8.0
-print(math.sqrt(9))  # 3.0   float
+
+# print(math.pow(2, 3))  # 2* 2 *2 = 8.0
+# print(math.sqrt(9))  # 3.0   float
 
 
+def hello_world():
+    print('Hello')
 
 
+hello_world()
+
+
+def sum_two_number(number1, number2):
+    my_sum = number1 + number2
+    return my_sum
+
+
+result = sum_two_number(1, 5)
+print(result)
+
+print(sum_two_number('ab', 'cd'))
