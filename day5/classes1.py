@@ -15,3 +15,4 @@ person1.walk('lajos')
 person2 = Person()
 print(person1)
 print(person2)
+
