@@ -5,6 +5,7 @@ class Person:
         self.age = age
         self.active = True
 
+
     def walk(self, email):
         print('I am walking', self.name, self.age, email)
 
