@@ -1,23 +1,18 @@
 class Person:
-    younger_rate = 0.8  # osztalyvaltozo
 
     def __init__(self, name, age):
-        self.name = name  # peldanyvaltozo
+        self.name = name
         self.age = age
-        self.magic_potion = False
 
-    def make_me_younger(self):
-        # if not self.magic_potion:
-        if self.magic_potion == False:
-            self.age = self.age * Person.younger_rate
-            self.magic_potion = True
-            print(f'Your age is {self.age}')
-        else:
-            print('You have already used this potion.')
+    def __str__(self):  # User friendly
+        return f'{self.name} is {self.age} years old'
+
+    def __repr__(self): # developer friendly
+        return f"Person('{self.name}', {self.age})"
 
 
-person1 = Person('Krisztina', 20)
-print(person1.age)
-person1.make_me_younger()
-person1.make_me_younger()
-print(person1.age)
+person1 = Person('John', 14)
+print(person1)
+print(person1.__repr__())
+
+pers2 = Person('John', 14)
